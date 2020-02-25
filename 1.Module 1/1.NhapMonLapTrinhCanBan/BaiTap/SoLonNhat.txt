@@ -1,0 +1,13 @@
+BEGIN
+    INPUT A,B,C
+    if A>B
+        if A > C
+        Display A: so lon nhat
+        else C la so lon nhat
+        end if
+    else if B > C
+         display B : so lon nhat
+         else C : so lon nhat
+         end if
+    end if
+END
