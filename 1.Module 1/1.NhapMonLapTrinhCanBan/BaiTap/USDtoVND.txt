@@ -1,0 +1,6 @@
+BEGIN
+    INPUT A (VND)
+          B (USD)
+    A = B * 23000
+    DISPLAY A
+END
