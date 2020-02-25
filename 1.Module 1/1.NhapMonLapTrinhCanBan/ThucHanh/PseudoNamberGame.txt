@@ -1,0 +1,9 @@
+BEGIN
+    INPUT N trong khoan 0-9
+    INPUT M
+    IF (N===M)
+    DISPLAY " DU DOAN DUNG"
+    ELSE
+    DISPLAY " DU DOAN SAI"
+    END IF
+END
