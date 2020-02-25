@@ -1,0 +1,14 @@
+BEGIN
+    INPUT: n
+          max = a1
+          i =2
+    if i < n
+       if ai > a1
+       Display ai : max
+       else
+       Do ai = ai + 1
+       end if
+       Display max
+     else Display max
+END
+
