@@ -1,0 +1,5 @@
+START
+    INPUT A,B,C,D
+    D = (A+B+C)/3
+    DISPLAY D
+STOP
