@@ -1,0 +1,17 @@
+BEGIN
+    INPUT X
+    While ( X <= 100)
+    if X => 75
+        Display Loai A
+    else if X => 60
+         Display Loai B
+         else if X => 45
+         Display Loai C
+                else if X =>35
+                Display Loai D
+                      Else Display loai E
+                      End if
+               End if
+          End if
+     End if
+END
