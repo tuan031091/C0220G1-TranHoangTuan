@@ -2,13 +2,12 @@ BEGIN
     INPUT: n
           max = a1
           i =2
-    if i < n
-       if ai > a1
-       Display ai : max
-       else
-       Do ai = ai + 1
+    while i <= n
+     Do  if ai > max
+        max =ai;
        end if
+        i = i + 1
+        end do
        Display max
-     else Display max
 END
 

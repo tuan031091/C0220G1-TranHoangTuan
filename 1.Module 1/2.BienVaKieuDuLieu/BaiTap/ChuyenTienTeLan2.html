@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+</head>
+<body>
+<label>Amount</label><br/>
+<input type="text" id="amount"></input><br/>
+<label>FromCurrency</label><br/>
+<select id="fromCurrency">
+    <option value="VND">VND</option>
+    <OPTION value = 'USD'>USD</OPTION>
+</select><br/>
+<label>ToCurrency</label><br/>
+<select id = 'toCurrency'>
+    <option value = 'USD'>USD</option>
+    <option value = 'VND'>VND</option>
+</select><br/>
+<button  onclick= 'chuyendoi()' >convert</button><br/>
+<input  id="ketqua" >
+<script>
+    function chuyendoi(){
+        let Amount = document.getElementById('amount');
+        let FromCurrency = document.getElementById('fromCurrency').value;
+        let ToCurrency = document.getElementById('toCurrency').value;
+        let ketqua = document.getElementById('ketqua');
+        if (FromCurrency == 'VND' && ToCurrency == 'USD'){
+            ketqua.value = Amount.value/23000
+        } else if (FromCurrency == 'USD' && ToCurrency == 'VND'){
+            ketqua.value = Amount.value*23000
+        }else { ketqua.value='vui long chon loai ngoai te chuyen doi'}
+    }
+
+</script>
+</body>
+</html>

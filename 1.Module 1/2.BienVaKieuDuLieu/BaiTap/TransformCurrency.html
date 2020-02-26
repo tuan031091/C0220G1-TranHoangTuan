@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform Currency</title>
+</head>
+<body>
+<form>
+ Amount<br/>
+    <input type="number" id="sotien" min="0"><br/>
+ FromCurrency<br/>
+<select id ='FromCurrency'>
+    <option value="VND"> VND </option>
+    <option calue="USD"> USD </option>
+</select><br/>
+ ToCurrency<br/>
+<select id = 'ToCurrency'>
+    <option value="VND"> VND </option>
+    <option value="USD"> USD </option>
+</select>
+<button type="button" onclick="tinhToan()">Convert</button><br/>
+ <input text="text" id="ketqua" value="">
+</form>
+<script>
+    function tinhToan() {
+        let amount = document.getElementById('sotien');
+        let FromCurrency = document.getElementById('FromCurrency').value;
+        let ToCurrency = document.getElementById('ToCurrency').value;
+        let ketQua = document.getElementById('ketqua');
+        if (FromCurrency == 'VND' && ToCurrency == 'USD') {
+            ketQua.value = amount.value / 23000 ;
+        } else if (FromCurrency == 'USD' && ToCurrency == 'VND') {
+            ketQua.value = amount.value * 23000
+        } else {ketQua.value = 'hay chon loai tien quy doi'};
+    }
+
+</script>
+
+</body>
+</html>
