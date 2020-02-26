@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung Dung May Tinh</title>
+</head>
+<body>
+<label>Caculator</label><br/>
+<input type = 'number' id="number1">
+<input type = 'number' id = 'number2'><br/>
+<button onclick="cong()">Addition(+)</button>
+<button onclick = 'tru()'>Subtraction(-)</button>
+<button onclick="nhan()">Multiplication(X)</button>
+<button onclick="chia()">Division(/)</button><br/>
+<input id="traKetQua">
+
+<script>
+    let NumBer1 = document.getElementById('number1');
+    let NumBer2 = document.getElementById("number2");
+    function cong(){
+        // let NumBer1 = document.getElementById('number1'); upto for convenient coding
+        // let NumBer2 = document.getElementById("number2");
+        let cong = document.getElementById('traKetQua');
+         cong.value = parseInt(NumBer1.value) + parseInt(NumBer2.value);
+    }
+    function tru() {
+        let tru = document.getElementById('traKetQua');
+        tru.value = parseInt(NumBer1.value)- parseInt(NumBer2.value);
+    }
+    function nhan(){
+        let nhan = document.getElementById('traKetQua');
+        nhan.value = NumBer1.value * NumBer2.value;
+    }
+    function chia() {
+        let chia = document.getElementById('traKetQua');
+        chia.value = NumBer1.value / NumBer2.value;
+
+    }
+
+
+</script>
+</body>
+</html>
