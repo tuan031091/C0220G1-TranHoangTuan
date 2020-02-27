@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Case</title>
+</head>
+<body>
+<script>
+    // let browser = prompt('vui long dien browser')
+    // if (browser ==  'edge'){
+    //     alert("you've got the edge");
+    // } else if (browser == 'Chorme' || browser == 'Firefox' || browser == 'Safari' || browser == 'opera'){
+    //     alert('ok we support these browsers too')
+    // } else {alert = (' we hope that this page looks ok !')}
+
+    let browser = prompt('vui long dien browser');
+    switch (browser) {
+        case 'edge':
+            alert("you've got the edge");
+            break;
+        case 'Chorme':
+        case 'Firefox':
+        case 'safari':
+        case 'opera':
+            alert('ok we support these browsers too');
+            break;
+        default: alert('we hope that this page looks ok !')
+
+    }
+</script>
+</body>
+</html>

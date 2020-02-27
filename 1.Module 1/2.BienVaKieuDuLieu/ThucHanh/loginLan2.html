@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Login = prompt('vui long nhap ID');
+    if (Login == 'Admin') {
+        let Pass = prompt('vui long nhap mat khau');
+        if (Pass == 'TheMaster') {
+            alert('Welcome')
+        } else if (Pass == 'null') {
+            alert('canceled')
+        } else {
+            alert('Wrong password')
+        }
+    } else if (Login == 'null') {
+        alert('canceled')
+    } else {
+        alert("i don't know")
+    }
+</script>
+</body>
+</html>
