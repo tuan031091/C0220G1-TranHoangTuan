@@ -6,9 +6,13 @@
 </head>
 <body>
 <script>
-    let message = prompt('nhap chuoi tin nhan','abcd');
-    let message = (login == 'hello') ? 'hello' :
-        (login)
+    let login = prompt('nhap chuoi tin nhan', 'abcd');
+    let message = (login == 'Employee') ? 'Hello' :
+        (login == 'hello') ? 'hello' :
+            (login == 'Director') ? 'Greeting' :
+                (login == '') ? "No login" : '';
+    alert(message)
+
 </script>
 </body>
 </html>

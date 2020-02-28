@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<fieldset>
+    <input id="hienso" type="text" size="11" min="-99999999999999999" max="9999999999999999"><br>
+    <button value="1" id='mot' onclick="tinhtoan(this.value)">1</button>
+    <button value="2" id='hai' onclick="tinhtoan(this.value)">2</button>
+    <button value="3" id='ba' onclick="tinhtoan(this.value)">3</button>
+    <button value="+" id='cong' onclick="tinhtoan(this.value)">+</button>
+    <br>
+    <button value="4" id='bon' onclick="tinhtoan(this.value)">4</button>
+    <button value="5" id='nam' onclick="tinhtoan(this.value)">5</button>
+    <button value="6" id='sau' onclick="tinhtoan(this.value)">6</button>
+    <button value="-" id='tru' onclick="tinhtoan(this.value)">-</button>
+    <br>
+    <button value="7" id='bay' onclick="tinhtoan(this.value)">7</button>
+    <button value="8" id='tam' onclick="tinhtoan(this.value)">8</button>
+    <button value="9" id='chin' onclick="tinhtoan(this.value)">9</button>
+    <button value="*" id='nhan' onclick="tinhtoan(this.value)">x</button>
+    <br>
+    <button value="" id='c' onclick="tinhtoanc()">C</button>
+    <button value="0" id='khong' onclick="tinhtoan(this.value)">0</button>
+    <button id='bang' onclick="ketqua()">=</button>
+    <button value="/" id='chia' onclick="tinhtoan(this.value)">/</button>
+    <br>
+</fieldset>
+
+<script>
+    let HienSo = document.getElementById('hienso');
+
+    function tinhtoan(thuchien) {
+        HienSo.value += thuchien
+    }
+
+    function tinhtoanc() {
+        HienSo.value = ''
+    }
+
+    function ketqua() {
+        HienSo.value = eval(HienSo.value)
+    }
+
+
+    // code cua anh son
+    // function calculator(tinh) {
+    //     let nhap=document.getElementById('nhap');
+    //     nhap.value=(tinh=='=')?
+    //         eval(nhap.value):
+    //         (tinh=='C')?
+    //             '': nhap.value+tinh;
+
+</script>
+</body>
+</html>

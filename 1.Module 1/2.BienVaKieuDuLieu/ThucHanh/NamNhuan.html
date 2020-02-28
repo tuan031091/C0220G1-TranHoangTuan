@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt('nhap nam ban muon xem', 'Vi du:' + 2020));
+    let LayDu4 = year % 4;
+    let LayDu100 = year % 100;
+    let LayDu400 = year % 400;
+
+    if (LayDu400 == 0) {
+        alert(' nam ' + year + 'la nam nhuan')
+    } else if (LayDu4 == 0 && LayDu100 !== 0) {
+        alert('nam' + year + ' la nam nhuan')
+    } else { alert(
+        'nam' + year + ' khong la nam nhuan')
+    }
+
+
+</script>
+</body>
+</html>
