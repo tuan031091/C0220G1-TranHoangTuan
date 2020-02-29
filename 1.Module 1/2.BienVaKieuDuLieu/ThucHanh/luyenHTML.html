@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1>Click on Image to Change Image </h1>
-    <script>
-        function changeImage(){
-            var image = document.getElementById("image");
-            switch(1){
-                case 1 :
-                    image.src = "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg";
-                    break;
-                case 2 :
-                    image.src = "hinhAnhGamePuzzl/khi1.jpg";
-                    break;
-                case 3:
-                    image.src = "hinhAnhGamePuzzl/panda_swap_part1x1.jpg";
-                    break;
-                    document.getElememtById("image_change_button").innerHTML = Math.random();
-            }
+    <title>You must love me</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        function yesClick()
+        {
+            alert("Yes. you are right ");
+        }
+        function noHover()
+        {
+            var x = Math.round(Math.random() * window.innerWidth);
+            var y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById('btnNo').style.left = x + 'px';
+            document.getElementById('btnNo').style.top = y + 'px';
         }
     </script>
 </head>
 <body>
-<div>
-    <img id = "image" src = "hinhAnhGamePuzzl/khi1.jpg" >
-</div>
-<div>
-    <button id = "image_change_button" onClick = "changeImage()" width = " 100" height = "100">OnClick</button>
-</div>
+<h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>
+<input type="button" value=" YES " onclick="yesClick()" style="position:absolute; left:285px; top:235px;"/>
+<input type="button" id="btnNo" value="  NO  " onmouseover="noHover()" style="position:absolute; left:360px; top:235px;"/>
 </body>
 </html>

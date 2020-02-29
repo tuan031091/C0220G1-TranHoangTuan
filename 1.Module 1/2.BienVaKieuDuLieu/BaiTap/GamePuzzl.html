@@ -5,7 +5,7 @@
     <title>Game puzzl</title>
 </head>
 <body>
-<img alt="" id="cat1" onclick="nhanvao(1)" src="hinhAnhGamePuzzl/funny-cat1_part1x1.jpg" height="160" width="800"/>
+<img alt="" id="cat1" onclick="nhanvao1()" src="hinhAnhGamePuzzl/funny-cat1_part1x1.jpg" height="160" width="800"/>
 <br>
 <img alt="" id="cat2" onclick="nhanvao()" src="hinhAnhGamePuzzl/funny-cat1_part2x1.jpg" height="160" width="800"/>
 <br>
@@ -16,31 +16,35 @@
 <img alt="" id="cat5" onclick="nhanvao()" src="hinhAnhGamePuzzl/funny-cat1_part5x1.jpg" height="160" width="800"/>
 
 <script>
+
     // function nhanvao(thamso) {
-    //     let Cat1 = document.getElementById('cat1');
+    //     // let Cat1 = document.getElementById('cat1');
     //     if (thamso == 1) {
     //         if (Cat1.src == "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg") {
     //             Cat1.src = "hinhAnhGamePuzzl/khi1.jpg"
-    //         } else if (Cat1.src == "hinhAnhGamePuzzl/panda_swap_part1x1.jpg") {
+    //         } else if (Cat1.src == "hinhAnhGamePuzzl/khi1.jpg") {
+    //             Cat1.src = "hinhAnhGamePuzzl/panda_swap_part1x1.jpg"
+    //         } else if ( Cat1.src == "hinhAnhGamePuzzl/panda_swap_part1x1.jpg" ){
     //             Cat1.src = "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg"
-    //         } else {
-    //             Cat1.src == "hinhAnhGamePuzzl/khi1.jpg"
     //         }
+    //
+    //
     //     }
     //
     //
     // }
 
-    function nhanvao(thamso) {
+    function nhanvao1() {
         let Cat1 = document.getElementById('cat1');
-        if (thamso == 1) {
-
+        if (Cat1.src == "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg") {
+            Cat1.src = "hinhAnhGamePuzzl/khi1.jpg"
+        } else if (Cat1.src == "hinhAnhGamePuzzl/khi1.jpg") {
+            Cat1.src = "hinhAnhGamePuzzl/panda_swap_part1x1.jpg"
+        } else if (Cat1.src == "hinhAnhGamePuzzl/panda_swap_part1x1.jpg") {
+            Cat1.src == "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg"
         }
-
-
-        }
-
-
+        console.log(Cat1.src)
+    }
 
 
 </script>

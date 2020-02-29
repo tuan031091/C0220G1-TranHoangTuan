@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhso = parseInt(prompt('nhập vào doanh số ĐVT: Triệu đồng'));
+    let hoahong;
+    let tienthuong;
+
+    if (doanhso > 1000) {
+        hoahong = 50 / 100;
+    } else {
+        if (doanhso >= 800) {
+            hoahong = 40 / 100;
+        } else {
+            if (doanhso >= 600) {
+                hoahong = 30 / 100
+            } else {
+                if (doanhso >= 400) {
+                    hoahong = 20 / 100
+                } else {
+                    if (doanhso >= 100) {
+                        hoahong = 10 / 100
+                    } else {
+                        hoahong = 0
+                    }
+                }
+            }
+        }
+    }
+
+
+    tienthuong = hoahong * doanhso;
+    alert('hoa hong cua ban la: ' + (hoahong * 100) + " % " + ' va tien thuong cua ban la : ' + tienthuong + ' trieu dong');
+
+
+</script>
+</body>
+</ht

@@ -5,20 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Do You Love Me</h3>
+<h3 >Do You Love Me</h3>
 <br>
+
 <button onclick="dongy()">Yes</button>
-<button id="khongdongy" onmouseover="khong()" top=" 15 px" left = '10px' >No</button>
+<button id="khongdongy" onmouseover="khong()" style="position: absolute; ;  ">No</button>
 <script>
     function dongy() {
-        alert('Me too')
+        alert('me too');
     }
     function khong(){
-        let khong = document.getElementById('khongdongy');
-        khong.style.top = Math.floor(Math.random()*20);
-        console.log(khong.style.top);
-
+        let Khong = document.getElementById('khongdongy');
+        let x = Math.floor(Math.random()*window.innerHeight);
+        let y = Math.floor(Math.random()*window.innerWidth);
+        Khong.style.left = y + 'px';
+        Khong.style.top = x + 'px';
+        console.log(Khong.style.left);
+        console.log(Khong.style.top);
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
     }
+
 </script>
 </body>
 </html>
