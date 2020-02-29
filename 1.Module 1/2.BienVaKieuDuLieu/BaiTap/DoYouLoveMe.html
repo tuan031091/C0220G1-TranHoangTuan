@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Do You Love Me</h3>
+<br>
+<button onclick="dongy()">Yes</button>
+<button id="khongdongy" onmouseover="khong()" top=" 15 px" left = '10px' >No</button>
+<script>
+    function dongy() {
+        alert('Me too')
+    }
+    function khong(){
+        let khong = document.getElementById('khongdongy');
+        khong.style.top = Math.floor(Math.random()*20);
+        console.log(khong.style.top);
+
+    }
+</script>
+</body>
+</html>

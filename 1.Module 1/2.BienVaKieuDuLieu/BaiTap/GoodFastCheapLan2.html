@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,8 +13,8 @@
         .switch {
             position: relative;
             display: inline-block;
-            width: 40px;
-            height: 20px;
+            width: 60px;
+            height: 34px;
         }
 
         .switch input {
@@ -31,10 +38,10 @@
         .slider:before {
             position: absolute;
             content: "";
-            height: 15px;
-            width: 15px;
-            left: 3px;
-            bottom: 2px;
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
             background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
@@ -66,44 +73,48 @@
 </head>
 <body>
 
+<h2>CUOC SONG MA</h2>
 
 
-<label onclick="thucthi(1)" class="switch" >
-    <input id="GOOD" type="checkbox" >
+<label class="switch">
+    <input id="giau" onclick="luachon(1)" type="checkbox">
     <span class="slider round"></span>
-</label> <label>Good</label><br><br>
+</label> <label>GIÀU</label><br><br>
 
-<label onclick="thucthi(2)" class="switch" >
-    <input id="FAST" type="checkbox" >
+<label class="switch">
+    <input id="dep" onclick="luachon(2)" type="checkbox">
     <span class="slider round"></span>
-</label> <label>Fast</label><br><br>
+</label> <label>ĐẸP TRAI</label><br><br>
 
-<label onclick="thucthi(3)" class="switch" >
-    <input id="CHEAP" type="checkbox" >
+<label class="switch">
+    <input id="chungtinh" onclick="luachon(3)" type="checkbox">
     <span class="slider round"></span>
-</label> <label>Cheap</label>
+</label> <label>CHUNG TÌNH</label>
 
 <script>
-    function thucthi(nhangiatri) {
-        let good = document.getElementById('GOOD');
-        let fast = document.getElementById('FAST');
-        let cheap = document.getElementById('CHEAP');
-        if (nhangiatri == '1') {
-            if ((fast.checked == true) && (cheap.checked == true)) {
-                cheap.checked = false
+    let Giau = document.getElementById('giau');
+    let DepTrai = document.getElementById('dep');
+    let ChungTinh = document.getElementById('chungtinh');
+
+    function luachon(biengia) {
+        if (biengia == '1') {
+            if ((DepTrai.checked == true) && (ChungTinh.checked == true)) {
+                ChungTinh.checked = false
             }
-        } else if (nhangiatri == '2'){
-            if ((good.checked == true) && (cheap.checked == true)){
-                good.checked = false
+        } else if (biengia == '2') {
+
+            if ((Giau.checked == true) && (ChungTinh.checked == true)) {
+                Giau.checked = false
             }
-        } else if ((good.checked == true) && (fast.checked == true) ){
-            fast.checked = false
+        } else if ((Giau.checked == true) && (DepTrai.checked == true)) {
+            DepTrai.checked = false
         }
+
     }
 
 
-
 </script>
+
 
 </body>
 </html>
