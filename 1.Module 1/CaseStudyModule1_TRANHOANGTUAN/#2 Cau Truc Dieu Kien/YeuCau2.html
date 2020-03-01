@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nameCustomer = 'Trần Hoàng Tuấn';
+    let emailCustomer = 'tuantran031091@gmail.com';
+    let idcard = 123456789;
+    let brithdayCustomer = '03/10/1991';
+    let addressCustomer = 'Quảng Nam';
+    let typeCustomer = 'Diamond';
+    let discount = 10;
+    let munberOfAccompanying = 2;
+    let typeRoom = 'Business';
+    let rentDays = 10;
+    let typeService = 'villa';
+    let informationCustomer = function () {
+        return ('1. Full Name : ' + nameCustomer + '\n' + '2. ID card : ' + idcard + '\n' + '3. Email : ' + emailCustomer + '\n' + '4. Birth Day : ' + brithdayCustomer + '\n' + '5. Address : ' + addressCustomer + '\n' + '6. Type of Customer : ' + typeCustomer + '\n' + '7. Discount : ' + discount + '\n' + '8. Number of Accompanying : ' + munberOfAccompanying + '\n' + '9. Type of Room : ' + typeRoom + '\n' + '10. Rent Days : ' + rentDays + '\n' + '11. Type of Service : ' + typeService)
+    };
+    let Menu = parseInt(prompt('1. Show information Customer' + '\n' + '2. Edit information Customer' + '\n' + '3. Show The Amount To Be Paid After Discount'));
+
+    switch (Menu) {
+        case 1:
+            alert(informationCustomer());
+            break;
+        case 2 :
+            let editInfor = parseInt(prompt('Choosing kind of information you want to change ' + '\n' + informationCustomer()));
+            switch (editInfor) {
+                case 1 :
+                    let changeNameCustomer = prompt('Change Full Name');
+                    nameCustomer = changeNameCustomer;
+                    alert(informationCustomer());
+                    break;
+                case 2:
+                    let changeIdCard = parseInt(prompt('Change ID '));
+                    idcard = changeIdCard;
+                    alert(informationCustomer());
+                    break;
+                case 3:
+                    let changeEmail = prompt('Change Email');
+                    emailCustomer = changeEmail;
+                    alert(informationCustomer());
+                    break;
+                case 4:
+                    let changeBirthday = prompt('Change Birthday');
+                    brithdayCustomer = changeBirthday;
+                    alert(informationCustomer());
+                    break;
+                case 5:
+                    let changeAdress = prompt('Change Adress');
+                    addressCustomer = changeAdress;
+                    alert(informationCustomer());
+                    break;
+                case 6:
+                    let changeTypeCustomer = prompt('Change Type of Customer');
+                    typeCustomer = changeTypeCustomer;
+                    alert(informationCustomer());
+                    break;
+                case 7:
+                    let changeDiscount = prompt('Change Discount');
+                    discount = changeDiscount;
+                    alert(informationCustomer());
+                    break;
+                case 8:
+                    let changeNumberofpeople = prompt('Change Number of Accompanying');
+                    munberOfAccompanying = changeNumberofpeople;
+                    alert(informationCustomer());
+                    break;
+                case 9:
+                    let changeTypeRoom = prompt('Change Type of Room');
+                    typeRoom = changeTypeRoom;
+                    alert(informationCustomer());
+                    break;
+                case 10:
+                    let changeRentdays = prompt('Change Rentdays ');
+                    rentDays = changeRentdays;
+                    alert(informationCustomer());
+                    break;
+                case 11:
+                    let changeTypeService = prompt('Change Type of service ');
+                    typeService = changeTypeService;
+                    alert(informationCustomer());
+                    break;
+                default:
+                    alert('Vui long chon cac truong thong tin chi co tren bang hien thi')
+            }
+            ;
+            break;
+        case 3:
+            let DiscountFollowAdress;
+            if (addressCustomer == 'Đà Nẵng') {
+                DiscountFollowAdress = 20;
+            } else if (addressCustomer == 'Huế') {
+                DiscountFollowAdress = 10;
+            } else if (addressCustomer == "Quảng Nam") {
+                DiscountFollowAdress = 5;
+            } else DiscountFollowAdress = 0;
+
+            let Discount_Follow_RentDays;
+            if (7 < munberOfAccompanying) {
+                Discount_Follow_RentDays = 30;
+            } else if (5 <= munberOfAccompanying) {
+                Discount_Follow_RentDays = 20;
+            } else if (2 <= munberOfAccompanying) {
+                Discount_Follow_RentDays = 10;
+            } else Discount_Follow_RentDays = 0;
+
+            let Discount_Follow_Customer;
+            if (typeCustomer == 'Diamond') {
+                Discount_Follow_Customer = 15;
+            } else if (typeCustomer == 'Platinum') {
+                Discount_Follow_Customer = 10;
+            } else if (typeCustomer == 'Gold') {
+                Discount_Follow_Customer = 5;
+            } else if (typeCustomer == 'Silver') {
+                Discount_Follow_Customer = 2;
+            } else Discount_Follow_Customer = 0;
+
+            let Discount_Follow_All = DiscountFollowAdress + Discount_Follow_RentDays + Discount_Follow_Customer;
+
+            let PriceOfService;
+            if (typeService == 'villa') {
+                PriceOfService = 500;
+            } else if (typeService == 'house') {
+                PriceOfService = 300;
+            } else if (typeService == 'room') {
+                PriceOfService = 100;
+            }
+
+            let Payment = ((PriceOfService * rentDays) - (discount / 100 * PriceOfService) - Discount_Follow_All);
+            alert(informationCustomer() + '\n' + 'Your Payment is : ' + Payment + ' USD ');
+            break;
+        default:
+            alert('vui long chon 1 trong 3 truong thong tin tren')
+    }
+
+</script>
+</body>
+</html>
