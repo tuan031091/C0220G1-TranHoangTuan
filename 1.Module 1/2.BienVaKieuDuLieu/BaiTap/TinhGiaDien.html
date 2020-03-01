@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Dien = parseInt(prompt('nhap vao so dien da su dung (kWh)'));
+    let ThanhTien;
+    if ( Dien <= 50 ) {
+        ThanhTien = Dien * 1484;
+        alert(ThanhTien + 'dong')
+    } else if ( Dien <= 100) {
+        ThanhTien = (50 * 1484) + ((Dien - 50) * 1533);
+        alert(ThanhTien + 'dong')
+    } else if (Dien <= 200) {
+        ThanhTien = (50 * 1484) + (50 * 1533) + ((Dien - 100) * 1786);
+        alert(ThanhTien + 'dong')
+    } else if (Dien <= 300) {
+        ThanhTien = (50 * 1484) + (50 * 1533) + (100 * 1786) + ((Dien - 200) * 2242);
+        alert(ThanhTien + 'dong')
+    } else if (Dien <= 400) {
+        ThanhTien = (50 * 1484) + (50 * 1533) + (100 * 1786) + (100 * 2242) + ((Dien - 300) * 2503);
+        alert(ThanhTien + 'dong')
+    } else {
+        ThanhTien = (50 * 1484) + (50 * 1533) + (100 * 1786) + (100 * 2242) + (100 * 2503) + ((Dien - 400) * 2587);
+        alert(ThanhTien + 'dong')
+    }
+
+    console.log(ThanhTien);
+</script>
+</body>
+</html>

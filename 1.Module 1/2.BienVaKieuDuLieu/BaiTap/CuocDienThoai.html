@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phutgoi = parseInt(prompt('nhap vao so phut goi'));
+    let thanhtien;
+    if (phutgoi <= 50) {
+        thanhtien = 25000 + (phutgoi * 600);
+        alert(thanhtien)
+    } else { // phutgoi > 50
+        if (phutgoi <= 200) {
+            thanhtien = 25000 + (50 * 600) + ((phutgoi - 50) * 400);
+            alert(thanhtien)
+        } else  { //phutgoi >200
+            thanhtien = 25000 + (50 * 600) + (150 * 400) + ((phutgoi - 200) * 200);
+            alert(thanhtien)
+        }
+    }
+
+</script>
+</body>
+</html>

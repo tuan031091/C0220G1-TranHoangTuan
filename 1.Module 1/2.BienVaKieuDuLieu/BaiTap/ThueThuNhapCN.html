@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Luong = parseInt(prompt('nhap vao muc luong DVT: trieu dong'));
+    let NguoiPhuThuoc = parseInt(prompt('nhap vao so nguoi phu thuoc'));
+    let LuongKhauTru = Luong - (NguoiPhuThuoc * 3.6);
+    let ThueCN;
+    if (Luong > 9 && NguoiPhuThuoc == 0) {
+        if (Luong <= 10) {
+            ThueCN = 10 / 100 * Luong - 0.25;
+            alert(ThueCN);
+        } else if (Luong <= 18) {
+            ThueCN = 15 / 100 * Luong - 0.75;
+            alert(ThueCN);
+        } else if (Luong <= 32) {
+            ThueCN = 20 / 100 * Luong - 1.65;
+            alert(ThueCN);
+        } else if (Luong <= 52) {
+            ThueCN = 25 / 100 * Luong - 3.25;
+            alert(ThueCN);
+        } else if (Luong <= 80) {
+            ThueCN = 25 / 100 * Luong - 5.85;
+            alert(ThueCN);
+        } else {
+            ThueCN = 35 / 100 * Luong - 9.85;
+            alert(ThueCN);
+        }
+    } else if (Luong > 12.6 && NguoiPhuThuoc >= 1){
+        if (LuongKhauTru < 5) {
+            alert('ban khong phai nop thue')
+        } else if (LuongKhauTru == 5){
+            ThueCN = 5/100 * LuongKhauTru;
+            alert(ThueCN);
+        }else if (LuongKhauTru <= 10){
+            ThueCN = 10 / 100 * LuongKhauTru - 0.25;
+            alert(ThueCN);
+        } else if (Luong <= 18) {
+            ThueCN = 15 / 100 * LuongKhauTru - 0.75;
+            alert(ThueCN);
+        } else if (Luong <= 32) {
+            ThueCN = 20 / 100 * LuongKhauTru - 1.65;
+            alert(ThueCN);
+        } else if (Luong <= 52) {
+            ThueCN = 25 / 100 * LuongKhauTru - 3.25;
+            alert(ThueCN);
+        } else if (Luong <= 80) {
+            ThueCN = 25 / 100 * LuongKhauTru - 5.85;
+            alert(ThueCN);
+        } else {
+            ThueCN = 35 / 100 * LuongKhauTru - 9.85;
+            alert(ThueCN);
+        }
+    }else {alert('ban khong phai nop thue')}
+</script>
+</body>
+</html>

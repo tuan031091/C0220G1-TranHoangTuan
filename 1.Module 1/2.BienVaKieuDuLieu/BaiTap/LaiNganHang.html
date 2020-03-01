@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let NoGoc = parseInt(prompt(' nhap so tien vay ban dau'));
+    let ThangVay = parseInt(prompt('nhap so thang vay'));
+    let Lai = parseInt(prompt('nhap so lai vay hang thang'));
+    let Macdinh = 1 + (Lai/100);
+    //let TienThangDau = NoGoc *( 1 + (Lai/100));
+    let TienCacThangSau;
+    switch (ThangVay) {
+    case ThangVay:
+        TienCacThangSau = NoGoc*Macdinh**ThangVay;
+        alert(TienCacThangSau);
+        break;
+    }
+</script>
+</body>
+</html>
