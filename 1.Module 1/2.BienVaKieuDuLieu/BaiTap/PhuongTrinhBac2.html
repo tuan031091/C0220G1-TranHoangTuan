@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //ax2 + bx + c = 0
+    let a = parseInt(prompt('nhap a'));
+    let b = parseInt(prompt('nhap b'));
+    let c = parseInt(prompt('nhap c'));
+    let DENTA = ((b * b) - (4 * a * c));
+    alert(DENTA);
+    if (a != 0) {
+        if (DENTA == 0) {
+            alert('phuong trinh co nghiem kep la x1 = x2 = ' - (b / 2 * a))
+        } else if (DENTA > 0) {
+            alert('phuong trinh co hai nghiem phan biet x1= ' + (((-b) + Math.sqrt(DENTA)) / 2 * a) + 'va nghiem x2= ' +
+                (((-b) - Math.sqrt(DENTA)) / 2 * a))
+        } else if ((a + b + c) == 0) {
+            alert('phuong trinh co nghiem x1= 1; x2 = ' + c / a)
+        } else if ((a - b + c) == 0) {
+            alert('phuong trinh co nghiem x1= - 1; x2 = ' + (-c / a))
+        } else {
+            alert('phuong trinh vo nghiem')
+        }
+    } else alert('phuong trinh vo nghiem')
+
+</script>
+</body>
+</html>

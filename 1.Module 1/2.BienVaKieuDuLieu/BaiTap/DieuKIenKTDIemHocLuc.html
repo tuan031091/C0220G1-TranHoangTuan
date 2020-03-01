@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = parseInt(prompt("nhap diem kiem tra"));
+    let giuaky = parseInt(prompt(' nhap diem giuaky'));
+    let cuoiky = parseInt(prompt('nhap diem cuoi ky'));
+    let trungbinh = (kiemtra + giuaky + cuoiky) / 3;
+    // if (10 >= trungbinh >= 9) {
+    //     alert('xuat xac')
+    // } else {
+    //     if (trungbinh >= 8) {
+    //         alert('gioi')
+    //     } else {
+    //         if (trungbinh >= 7) {
+    //             alert('kha')
+    //         } else {
+    //             if (trungbinh >= 5) {
+    //                 alert('trung binh')
+    //             }else {alert('yeu')}
+    //         }
+    //     }
+    // }
+    if (9 <= trungbinh <= 10) {
+        alert('xuat xac')
+    } else if (8 <= trungbinh) {
+        alert('gioi')
+    } else if (7 <= trungbinh) {
+        alert('kha')
+    } else if ( 5 <= trungbinh) {
+        alert('tb')
+    } else {
+        alert('yeu')
+    }
+
+
+</script>
+</body>
+</html>
