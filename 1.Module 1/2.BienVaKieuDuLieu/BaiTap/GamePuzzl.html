@@ -5,45 +5,94 @@
     <title>Game puzzl</title>
 </head>
 <body>
-<img alt="" id="cat1" onclick="nhanvao1()" src="hinhAnhGamePuzzl/funny-cat1_part1x1.jpg" height="160" width="800"/>
+<img id="cat1" onclick="nhanvao(1)" src="hinhAnhGamePuzzl/funny-cat1_part1x1.jpg" height="160" width="800"/>
 <br>
-<img alt="" id="cat2" onclick="nhanvao()" src="hinhAnhGamePuzzl/funny-cat1_part2x1.jpg" height="160" width="800"/>
+<img id="cat2" onclick="nhanvao(2)" src="hinhAnhGamePuzzl/panda_swap_part2x1.jpg" height="160" width="800"/>
 <br>
-<img alt="" id="cat3" onclick="nhanvao()" src="hinhAnhGamePuzzl/funny-cat1_part3x1.jpg" height="160" width="800"/>
+<img alt="" id="cat3" onclick="nhanvao(3)" src="hinhAnhGamePuzzl/khi3.jpg" height="160" width="800"/>
 <br>
-<img alt="" id="cat4" onclick="nhanvao()" src="hinhAnhGamePuzzl/funny-cat1_part4x1.jpg" height="160" width="800"/>
+<img alt="" id="cat4" onclick="nhanvao(4)" src="hinhAnhGamePuzzl/funny-cat1_part4x1.jpg" height="160" width="800"/>
 <br>
-<img alt="" id="cat5" onclick="nhanvao()" src="hinhAnhGamePuzzl/funny-cat1_part5x1.jpg" height="160" width="800"/>
+<img alt="" id="cat5" onclick="nhanvao(5)" src="hinhAnhGamePuzzl/panda_swap_part5x1.jpg" height="160" width="800"/>
 
 <script>
 
-    // function nhanvao(thamso) {
-    //     // let Cat1 = document.getElementById('cat1');
-    //     if (thamso == 1) {
-    //         if (Cat1.src == "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg") {
-    //             Cat1.src = "hinhAnhGamePuzzl/khi1.jpg"
-    //         } else if (Cat1.src == "hinhAnhGamePuzzl/khi1.jpg") {
-    //             Cat1.src = "hinhAnhGamePuzzl/panda_swap_part1x1.jpg"
-    //         } else if ( Cat1.src == "hinhAnhGamePuzzl/panda_swap_part1x1.jpg" ){
-    //             Cat1.src = "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg"
-    //         }
-    //
-    //
-    //     }
-    //
-    //
-    // }
+    function nhanvao(thamso) {
 
-    function nhanvao1() {
-        let Cat1 = document.getElementById('cat1');
-        if (Cat1.src == "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg") {
-            Cat1.src = "hinhAnhGamePuzzl/khi1.jpg"
-        } else if (Cat1.src == "hinhAnhGamePuzzl/khi1.jpg") {
-            Cat1.src = "hinhAnhGamePuzzl/panda_swap_part1x1.jpg"
-        } else if (Cat1.src == "hinhAnhGamePuzzl/panda_swap_part1x1.jpg") {
-            Cat1.src == "hinhAnhGamePuzzl/funny-cat1_part1x1.jpg"
+        if (thamso == 1) {
+            let Cat1 = document.getElementById('cat1');
+            if (Cat1.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part1x1.jpg") {
+                Cat1.src = "hinhAnhGamePuzzl/panda_swap_part1x1.jpg";
+            } else if (Cat1.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part1x1.jpg") {
+                Cat1.src = "hinhAnhGamePuzzl/khi1.jpg";
+            } else if (Cat1.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi1.jpg") {
+                Cat1.src = 'hinhAnhGamePuzzl/funny-cat1_part1x1.jpg'
+            }
+
+
+        } else if (thamso == 2) {
+            let Cat2 = document.getElementById('cat2');
+            if (Cat2.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part2x1.jpg") {
+                Cat2.src = "hinhAnhGamePuzzl/panda_swap_part2x1.jpg";
+            } else if (Cat2.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part2x1.jpg") {
+                Cat2.src = "hinhAnhGamePuzzl/khi2.jpg";
+            } else if (Cat2.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi2.jpg") {
+                Cat2.src = 'hinhAnhGamePuzzl/funny-cat1_part2x1.jpg'
+            }
+        } else if (thamso == 3) {
+            let Cat = document.getElementById('cat3');
+            if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part3x1.jpg") {
+                Cat.src = "hinhAnhGamePuzzl/panda_swap_part3x1.jpg"
+            } else if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part3x1.jpg") {
+                Cat.src = "hinhAnhGamePuzzl/khi3.jpg";
+            } else if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi3.jpg") {
+                Cat.src = 'hinhAnhGamePuzzl/funny-cat1_part3x1.jpg'
+            }
+        } else if (thamso == 4) {
+            let Cat = document.getElementById('cat4');
+            if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part4x1.jpg") {
+                Cat.src = "hinhAnhGamePuzzl/panda_swap_part4x1.jpg"
+            } else if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part4x1.jpg") {
+                Cat.src = "hinhAnhGamePuzzl/khi4.jpg";
+            } else if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi4.jpg") {
+                Cat.src = 'hinhAnhGamePuzzl/funny-cat1_part4x1.jpg'
+            }
+        } else if (thamso == 5) {
+            let Cat = document.getElementById('cat5');
+            if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part5x1.jpg") {
+                Cat.src = "hinhAnhGamePuzzl/panda_swap_part5x1.jpg"
+            } else if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part5x1.jpg") {
+                Cat.src = "hinhAnhGamePuzzl/khi5.jpg";
+            } else if (Cat.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi5.jpg") {
+                Cat.src = 'hinhAnhGamePuzzl/funny-cat1_part5x1.jpg'
+            }
         }
-        console.log(Cat1.src)
+        let Cat1 = document.getElementById('cat1');
+        let Cat2 = document.getElementById('cat2');
+        let Cat3 = document.getElementById('cat3');
+        let Cat4 = document.getElementById('cat4');
+        let Cat5 = document.getElementById('cat5');
+        if (Cat1.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part1x1.jpg"
+            && Cat2.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part2x1.jpg"
+            && Cat3.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part3x1.jpg"
+            && Cat4.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part4x1.jpg"
+            && Cat5.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/funny-cat1_part5x1.jpg") {
+            alert('chuc mung ban da chien thang')
+        } else if (Cat1.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi1.jpg"
+            && Cat2.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi2.jpg"
+            && Cat3.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi3.jpg"
+            && Cat4.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi4.jpg"
+            && Cat5.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/khi5.jpg") {
+            alert('chuc mung ban da chien thang')
+        } else if (Cat1.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part1x1.jpg"
+            && Cat2.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part2x1.jpg"
+            && Cat3.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part3x1.jpg"
+            && Cat4.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part4x1.jpg"
+            && Cat5.src == "http://localhost:63342/CODEGYM/1.Module%201/2.BienVaKieuDuLieu/BaiTap/hinhAnhGamePuzzl/panda_swap_part5x1.jpg") {
+            alert('chuc mung ban da chien thang')
+        }
+
+
     }
 
 

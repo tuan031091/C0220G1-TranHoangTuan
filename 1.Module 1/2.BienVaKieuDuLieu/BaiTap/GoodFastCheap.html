@@ -89,14 +89,14 @@
         let fast = document.getElementById('FAST');
         let cheap = document.getElementById('CHEAP');
         if (nhangiatri == '1') {
-            if ((fast.checked == true) && (cheap.checked == true)) {
+            if ((fast.checked) && (cheap.checked)) {
                 cheap.checked = false
             }
         } else if (nhangiatri == '2'){
-            if ((good.checked == true) && (cheap.checked == true)){
+            if ((good.checked) && (cheap.checked)){
                 good.checked = false
             }
-        } else if ((good.checked == true) && (fast.checked == true) ){
+        } else if ((good.checked) && (fast.checked) ){
             fast.checked = false
         }
     }
