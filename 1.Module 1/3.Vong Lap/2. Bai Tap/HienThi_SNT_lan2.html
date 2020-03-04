@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let number = 2 ; //cho chay tu snt dau tien
+    let result = ''; // bang 0 khi in ket qua se co so 0 (sai)
+    while (count <= 20){
+        let flag = true;
+        for (i = 2; i < Math.sqrt(number); i++ ){
+            if ( number % 2 == 0){
+                flag = false;
+                break;
+            }
+        } if (flag){
+            count++;
+            result += number +';';
+        } number++ // cong number o day neu khong kq result tren se sai vi number tang 1.
+    } document.write(result);
+</script>
+</body>
+</html>

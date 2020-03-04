@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let number=2; // chay tu number = 2
+    let result= '';
+    //let status=true; // khong de status trong nay vi let khong co gia tri trong vong lap; se lam cho status duowisvong lap
+    while(count<20) {                               // khong duoc khai bao nen vong lap quay mai
+        let status=true;
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                status =false;
+                break; // neu num % 2 thi status false; thuc hien break khong thuc hien lenh if duoi, quay lai tang i++
+            } // neu number chia het cho i thì k phai la snt => status fasle và break k thực hiện vong lap nua.
+        }    // nếu number 0 chia het cho i thì là snt, status true, tiep tuc thưc hien vong lap i++
+        if (status) { // moi lan status true la phat hien 1 snt, nen tang bien count len 1 va += voi chuoi de in 20 so
+            count++; // count tang len 1 de tiep tuc vong lap while dau tien den khi nao count = 20 thi dung
+            result+= number+" "
+        }
+        number++;
+    }
+    document.write(result);
+    // let number = parseInt(prompt("Enter number: "), 0);
+    // let status=false;
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 1;
+    let number = 1;
+    let Tong = 0;
+
+    while (count <= 30) {
+        let flag = true;
+        for (let i = 1; i <= 210; i++) {
+            if (number % 7 !== 0) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+         Tong += number ;
+         count ++
+        } number++
+
+    } document.write(Tong);
+
+</script>
+</body>
+</html>

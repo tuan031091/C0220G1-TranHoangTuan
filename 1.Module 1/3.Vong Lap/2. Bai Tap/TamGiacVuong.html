@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // hinh vuong 1
+    // for (i = 1; i <= 5; i++) {
+    //     document.write('#');
+    //     for (j = 1; j <= 5; j++) {
+    //         document.write('*')
+    //     }
+    // }
+
+    // tam giac 1
+    for (i = 1; i <= 5; i++) {
+        document.write('<br>');
+        for (j = 1; j <= i; j++) {
+            document.write('*')
+        }
+    } document.write('<br>');
+
+
+    //Tam giac 2
+    for (let i = 1; i <= 5; i++){
+        document.write('<br>');
+        for (j = 1; j <= 5-i; j++){
+            document.write('*')
+        }
+    }
+
+    //Tam giac 3
+    for (let i = 0; i < 5; i++){
+        for (j = 0; j < 5; j++){
+            if (i+j >= 4){
+                document.write('*')
+            } else {document.write('_')}
+        } document.write('<br>')
+    } document.write('<br>');
+    // tam giac 4
+    for (let i =0 ; i < 5; i++){
+        for (j = 0; j< 5;j++){
+            if (i <= j){
+                document.write("*")
+            } else (document.write('_'))
+        } document.write('<br>')
+    }
+
+</script>
+</body>
+</html>
