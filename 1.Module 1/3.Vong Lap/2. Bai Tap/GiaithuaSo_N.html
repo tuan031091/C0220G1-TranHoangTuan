@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt(' nhap vao so n'));
+    let Tu = (-1)**n;
+    let Tong = 0;
+    let Tich =1;
+    let ketqua;
+    for ( i =1; i <= n; i++){
+        ketqua = (-1)**i/(Tich *= i);
+        Tong += ketqua;
+    } document.write( (15+Tong));
+
+</script>
+</body>
+</html>
