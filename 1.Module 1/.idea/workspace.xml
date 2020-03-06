@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d40c569f-94e8-4c97-8193-4f9a99894bc5" name="Default Changelist" comment="" />
+    <list default="true" id="d40c569f-94e8-4c97-8193-4f9a99894bc5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Vong Lap/2. Bai Tap/GiaiThua_cua_GiaiThua.html" beforeDir="false" afterPath="$PROJECT_DIR$/3.Vong Lap/2. Bai Tap/GiaiThua_cua_GiaiThua.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -29,6 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,7 +47,12 @@
       <updated>1582533348290</updated>
       <workItem from="1582533350823" duration="247000" />
       <workItem from="1583376789997" duration="39000" />
-      <workItem from="1583376865714" duration="488000" />
+      <workItem from="1583376865714" duration="703000" />
+      <workItem from="1583377636357" duration="799000" />
+      <workItem from="1583379351116" duration="13383000" />
+      <workItem from="1583409961276" duration="15920000" />
+      <workItem from="1583451579528" duration="2787000" />
+      <workItem from="1583457512735" duration="13929000" />
     </task>
     <servers />
   </component>
@@ -50,9 +60,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1582533603307">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1583377631451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582533603307" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583377631451" />
+    <state x="185" y="14" key="SettingsEditor" timestamp="1583395924948">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="185" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1583395924948" />
   </component>
 </project>

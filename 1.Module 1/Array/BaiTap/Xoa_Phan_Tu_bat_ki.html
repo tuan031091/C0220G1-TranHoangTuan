@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = prompt('nhap vao mot chuoi');
+    let number = prompt('nhap vao 1 phan tu de xoa');
+    numbers = numbers.split(",");
+    let indexOfNumber;
+    for ( let i = 0; i <= numbers.length - 1; i++){
+        if( numbers[i] === number){
+            indexOfNumber = i;
+            break;
+        }
+    }
+
+    for ( let j = indexOfNumber ; j <= numbers.length -1; j++){
+        numbers[indexOfNumber] = numbers[indexOfNumber+1];
+        indexOfNumber++;
+    }//console.log(numbers)
+
+    let newarray = new Array();
+    for (i = 0; i < numbers.length - 1; i++){
+        newarray[i] = numbers[i]
+    }
+    document.write(newarray)
+
+
+
+
+</script>
+</body>
+</html>

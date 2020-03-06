@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = prompt('nhap vao mot mang');
+    let numberV = prompt('nhap vao mot so');
+    numbers = numbers.split(",");
+    let flag = false;
+    for (i = 0; i <= numbers.length - 1; i++) {
+        if (numbers[i] == numberV) {
+            flag = true;
+            break;
+        }
+    }
+    if (flag) {
+        alert('V thuoc mang')
+    } else {
+        alert('V khong thuoc mang')
+    }
+
+</script>
+</body>
+</html>

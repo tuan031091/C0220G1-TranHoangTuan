@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [15,45,2,89,348,2,1,36,98,32];
+    let first = 0;
+    let last = a.length -1;
+    let trunggian ;
+    for (let i = 0 ; i <= (a.length -1)/2; i++){
+        a[trunggian] = a[first];
+        a[first] = a[last];
+        a[last] = a[trunggian];
+        first++;
+        last--;
+        //document.write(a + '<br/>')
+    } console.log(a)
+</script>
+</body>
+</html>

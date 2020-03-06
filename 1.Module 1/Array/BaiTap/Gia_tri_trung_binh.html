@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [10, 485, 1, 26, 893, 45, 25, 36, 2, 7];
+    let max = x[0];
+    let tong = 0;
+    let trungbinh;
+    for (i = 0; i <= x.length - 1; i++) {
+        if (x[i] > max) {
+            max = x[i]
+        }
+        tong += x[i];
+
+    } trungbinh = tong/x.length;
+    document.write(max + '<br/>');
+    document.write(trungbinh)
+</script>
+</body>
+</html>
